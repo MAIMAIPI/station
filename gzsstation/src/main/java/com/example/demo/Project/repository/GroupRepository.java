@@ -20,4 +20,5 @@ public interface GroupRepository extends JpaRepository<Group,Integer>{
     List<User> selectGroupLeaderByProjectId(@Param("pid") Integer pid);
     @Query("select g.project from Group g inner join g.user u where u.uid=:uid order by g.degree")
     Page<Project> selectSelfProjectPage(@Param("uid") Integer uid, int page);
+    /**/
 }
