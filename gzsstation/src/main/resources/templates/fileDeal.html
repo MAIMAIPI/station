@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data"action="/jsu/projectItem/updateFile">
+    文件：<input type="file" name="file"/>
+    <br>
+    <input type="hidden" name="projectItemId" value="1">
+    <input type="hidden" name="userId" value="1">
+    <select name="type">
+        <option value="0">图片</option>
+        <option value="1">需求</option>
+        <option value="2">功能</option>
+    </select>
+    <br>
+    <img src="/jsu/resource/time.jpg" width="160" height="140"><br>
+    <input type="submit" />
+</form>
+</body>
+</html>

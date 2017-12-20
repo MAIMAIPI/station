@@ -1,0 +1,21 @@
+
+server:
+  port: 8888
+  context-path: /jsu
+
+spring:
+  thymeleaf:
+    mode: LEGACYHTML5
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/station
+    username: root
+    password: 123457
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  data:
+      elasticsearch:
+             cluster-nodes:127.0.0.1:9200 #配置es节点信息，逗号分隔，如果没有指定，则启动ClientNode
